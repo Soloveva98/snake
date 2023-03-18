@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*---------------------------*/
+body {
+  background-color: #F0FFF0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 530px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+.wrapper h1 {
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #578A34;
+  margin-bottom: 50px;
+}
+.wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.wrapper .header button {
+  font-size: 12px;
+  background-color: #D04436;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .header button:hover {
+  background-color: #CF3234;
+}
+.wrapper .header button:active {
+  transform: translateY(1px);
+}
+.wrapper .score__block {
+  color: #D04436;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+.wrapper .score__block img {
+  margin-right: 10px;
+}
+.wrapper .score {
+  padding-top: 2px;
+  margin-right: 15px;
+}
+.wrapper canvas {
+  display: block;
+  border: 15px solid #578A34;
+}
+
+.canvas {
+  position: relative;
+}
+
+.lose {
+  opacity: 0;
+  width: 530px;
+  height: 470px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #D04436;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 10px;
+  transition: all 0.3s ease-in-out;
+}
