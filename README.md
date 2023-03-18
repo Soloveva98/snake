@@ -18,4 +18,4 @@
 
 ---
 #### Game:
-![](img/game.gif)
+![](img/snakeGame.gif)
